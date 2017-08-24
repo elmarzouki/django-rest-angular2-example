@@ -6,7 +6,7 @@ source DjangoRestAngular2Env/bin/activate
 pip install -r requirements.txt
 
 # migrate
-cd exampleapp
+cd server
 python manage.py migrate
 
 # Install Angular 2 dependencies
