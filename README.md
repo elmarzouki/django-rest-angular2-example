@@ -23,6 +23,8 @@ Run the server:
 ```
 # in the server folder
 python manage.py runserver
+# create user
+python manage.py createsuperuser
 ```
 
 Start the Angular 2 app:
