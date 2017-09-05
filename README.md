@@ -31,5 +31,5 @@ Start the Angular 2 app:
 
 ```
 # in the client folder
-npm start
+ng serve
 ```
