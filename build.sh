@@ -1,6 +1,6 @@
 # create virtualenv
-virtualenv DjangoRestAngular2Env
-source DjangoRestAngular2Env/bin/activate
+# virtualenv DjangoRestAngular2Env
+# source DjangoRestAngular2Env/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt

@@ -1,11 +1,18 @@
-
-<ul class="collection">
-  <li class="collection-item avatar">
-    <img src="https://pbs.twimg.com/profile_images/811195253701169152/rAhguYRq_400x400.jpg" alt="" class="circle">
-    <span class="title">Mostafa El-MArzouki</span>
-    <p>iSuperMostafa<br>
-       bio: 
-    </p>
-    <a href="#!" class="secondary-content"><i class="material-icons">person_add</i></a>
-  </li>
-</ul>
+<div class="container">
+	<h2>Login info:</h2>
+	<p *ngIf="error" [ngClass]="{error: true}">An error occurred: {{error}}<br>
+	Navigate to http://127.0.0.1:8000/users/ and login first!</p>
+	<div *ngIf="!error">
+		<ul class="collection">
+		  <li class="collection-item avatar" *ngFor="let user of users">
+		    <i class="material-icons circle">person</i>
+		    <span class="title">Username: {{user.username}}</span>
+		    <p>Email: {{user.email}}
+		    	<br>
+		       Joined: {{user.date_joined | date}}
+		    </p>
+		    <a href="#!" class="secondary-content"><i class="material-icons">person_add</i></a>
+		  </li>
+		</ul>
+	</div>
+</div>
